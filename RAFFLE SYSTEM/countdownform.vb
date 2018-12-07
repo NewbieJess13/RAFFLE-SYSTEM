@@ -13,10 +13,12 @@
             My.Computer.Audio.Play(My.Settings.FilePath & "935271541986969.wav")
             Me.Close()
             Form1.btncountdown.Visible = False
+            Form1.btn_Claimed.Visible = False
         End If
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Timer1.Stop()
         Form1.btncountdown.Visible = False
         Me.Close()
     End Sub

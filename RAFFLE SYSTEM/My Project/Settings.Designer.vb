@@ -15,7 +15,7 @@ Option Explicit On
 Namespace My
     
     <Global.System.Runtime.CompilerServices.CompilerGeneratedAttribute(),  _
-     Global.System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.8.0.0"),  _
+     Global.System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.9.0.0"),  _
      Global.System.ComponentModel.EditorBrowsableAttribute(Global.System.ComponentModel.EditorBrowsableState.Advanced)>  _
     Partial Friend NotInheritable Class MySettings
         Inherits Global.System.Configuration.ApplicationSettingsBase
@@ -68,7 +68,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Server=.\SQLEXPRESS;Database=Raffle;Integrated Security=true")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Server=DESKTOP-5ABB736\SQLEXPRESS;Database=Raffle;Integrated Security=true")>  _
         Public Property ConnString() As String
             Get
                 Return CType(Me("ConnString"),String)
@@ -80,7 +80,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("C:\Users\JESTONI\Desktop\UpdatedRaffleSystem\RAFFLE SYSTEM\")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("C:\Users\JESTONI\Desktop\UpdatedRaffleSystem(v1.something)\RAFFLE SYSTEM\")>  _
         Public Property FilePath() As String
             Get
                 Return CType(Me("FilePath"),String)

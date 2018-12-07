@@ -1,16 +1,24 @@
 ﻿Imports ClassSql
 Public Class F_Winner
+    Dim dt As New DataTable
     Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
         F_Participants.Show()
         Me.Hide()
     End Sub
     Private Sub F_Winner_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        dg_Winner.DataSource = MsSql.Table("EXEC F_Winner @Name", New String() {"%"})
-        dg_Winner.Columns(0).Visible = False
+        dt = MsSql.Table("EXEC F_Winner @Name", New String() {"%"})
+        dg_Winner.Rows.Clear()
+        For Each dr As DataRow In dt.Rows
+            dg_Winner.Rows.Add(dr(0), dr(1) & ", " & dr(2) & " " & dr(3) & ".", dr(4), dr(5))
+        Next
     End Sub
     Public Sub F_Search(ValueToSeach As String)
         Try
-            dg_Winner.DataSource = MsSql.Table("EXEC F_Winner @Name", New String() {ValueToSeach})
+            dt = MsSql.Table("EXEC F_Winner @Name", New String() {ValueToSeach})
+            dg_Winner.Rows.Clear()
+            For Each dr As DataRow In dt.Rows
+                dg_Winner.Rows.Add(dr(0), dr(1) & ", " & dr(2) & " " & dr(3) & ".", dr(4), dr(5))
+            Next
         Catch ex As Exception
             MessageBox.Show(ex.ToString)
         End Try

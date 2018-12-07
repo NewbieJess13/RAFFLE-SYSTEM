@@ -90,6 +90,8 @@ Partial Class countdownform
         '
         Me.Button2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Button2.AutoSize = True
+        Me.Button2.BackgroundImage = Global.RAFFLE_SYSTEM.My.Resources.Resources.Icon_Red_X
+        Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button2.FlatAppearance.BorderSize = 0
         Me.Button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(105, Byte), Integer))
         Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(68, Byte), Integer))
@@ -99,7 +101,6 @@ Partial Class countdownform
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(55, 54)
         Me.Button2.TabIndex = 4
-        Me.Button2.Text = "X"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Panel2
@@ -151,7 +152,6 @@ Partial Class countdownform
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "countdownform"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "countdownform"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()

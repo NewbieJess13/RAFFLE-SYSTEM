@@ -42,7 +42,7 @@ Partial Class F_Update
         Me.B_add.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(118, Byte), Integer))
         Me.B_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.B_add.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.B_add.Location = New System.Drawing.Point(153, 129)
+        Me.B_add.Location = New System.Drawing.Point(153, 138)
         Me.B_add.Name = "B_add"
         Me.B_add.Size = New System.Drawing.Size(113, 36)
         Me.B_add.TabIndex = 11
@@ -51,28 +51,32 @@ Partial Class F_Update
         '
         'Label2
         '
+        Me.Label2.AutoEllipsis = True
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(32, 97)
+        Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(161, Byte), Integer), CType(CType(82, Byte), Integer))
+        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(28, 107)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(30, 17)
+        Me.Label2.Size = New System.Drawing.Size(34, 20)
         Me.Label2.TabIndex = 10
         Me.Label2.Text = "Site"
         '
         'Label1
         '
+        Me.Label1.AutoEllipsis = True
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(14, 56)
+        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(161, Byte), Integer), CType(CType(82, Byte), Integer))
+        Me.Label1.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(9, 66)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(48, 17)
+        Me.Label1.Size = New System.Drawing.Size(53, 20)
         Me.Label1.TabIndex = 9
         Me.Label1.Text = "Name"
         '
         'txt_site
         '
         Me.txt_site.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_site.Location = New System.Drawing.Point(65, 88)
+        Me.txt_site.Location = New System.Drawing.Point(65, 101)
         Me.txt_site.Name = "txt_site"
         Me.txt_site.Size = New System.Drawing.Size(201, 26)
         Me.txt_site.TabIndex = 8
@@ -80,7 +84,7 @@ Partial Class F_Update
         'txt_name
         '
         Me.txt_name.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_name.Location = New System.Drawing.Point(65, 47)
+        Me.txt_name.Location = New System.Drawing.Point(65, 60)
         Me.txt_name.Name = "txt_name"
         Me.txt_name.Size = New System.Drawing.Size(201, 26)
         Me.txt_name.TabIndex = 7
@@ -88,7 +92,7 @@ Partial Class F_Update
         'l_id
         '
         Me.l_id.AutoSize = True
-        Me.l_id.Location = New System.Drawing.Point(22, 143)
+        Me.l_id.Location = New System.Drawing.Point(27, 164)
         Me.l_id.Name = "l_id"
         Me.l_id.Size = New System.Drawing.Size(35, 13)
         Me.l_id.TabIndex = 12
@@ -108,6 +112,8 @@ Partial Class F_Update
         'Button1
         '
         Me.Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Button1.BackgroundImage = Global.RAFFLE_SYSTEM.My.Resources.Resources.Icon_Red_X
+        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button1.FlatAppearance.BorderSize = 0
         Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(105, Byte), Integer))
         Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(68, Byte), Integer))
@@ -117,7 +123,6 @@ Partial Class F_Update
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(30, 32)
         Me.Button1.TabIndex = 1
-        Me.Button1.Text = "X"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Panel2
