@@ -68,7 +68,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Server=DESKTOP-5ABB736\SQLEXPRESS;Database=Raffle;Integrated Security=true")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
         Public Property ConnString() As String
             Get
                 Return CType(Me("ConnString"),String)
@@ -80,7 +80,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("C:\Users\JESTONI\Desktop\UpdatedRaffleSystem(v1.something)\RAFFLE SYSTEM\")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
         Public Property FilePath() As String
             Get
                 Return CType(Me("FilePath"),String)

@@ -6,10 +6,10 @@
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="ConnString" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Server=DESKTOP-5ABB736\SQLEXPRESS;Database=Raffle;Integrated Security=true</Value>
+      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="FilePath" Type="System.String" Scope="User">
-      <Value Profile="(Default)">C:\Users\JESTONI\Desktop\UpdatedRaffleSystem(v1.something)\RAFFLE SYSTEM\</Value>
+      <Value Profile="(Default)" />
     </Setting>
   </Settings>
 </SettingsFile>

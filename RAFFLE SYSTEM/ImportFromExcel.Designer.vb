@@ -22,6 +22,7 @@ Partial Class ImportFromExcel
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -99,6 +100,15 @@ Partial Class ImportFromExcel
         Me.dgData.AllowUserToAddRows = False
         Me.dgData.AllowUserToDeleteRows = False
         Me.dgData.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgData.BackgroundColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgData.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.dgData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgData.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2})
         Me.dgData.Location = New System.Drawing.Point(274, 50)
@@ -131,16 +141,16 @@ Partial Class ImportFromExcel
         '
         'btnImport
         '
-        Me.btnImport.BackColor = System.Drawing.Color.Green
+        Me.btnImport.BackColor = System.Drawing.Color.DodgerBlue
         Me.btnImport.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(235, Byte), Integer), CType(CType(145, Byte), Integer))
         Me.btnImport.FlatAppearance.BorderSize = 0
         Me.btnImport.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(235, Byte), Integer), CType(CType(145, Byte), Integer))
         Me.btnImport.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(118, Byte), Integer))
         Me.btnImport.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnImport.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnImport.Location = New System.Drawing.Point(400, 437)
+        Me.btnImport.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnImport.Location = New System.Drawing.Point(477, 445)
         Me.btnImport.Name = "btnImport"
-        Me.btnImport.Size = New System.Drawing.Size(116, 43)
+        Me.btnImport.Size = New System.Drawing.Size(94, 43)
         Me.btnImport.TabIndex = 28
         Me.btnImport.Text = "IMPORT"
         Me.btnImport.UseVisualStyleBackColor = False
@@ -153,26 +163,26 @@ Partial Class ImportFromExcel
         Me.btn_browse.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(235, Byte), Integer), CType(CType(145, Byte), Integer))
         Me.btn_browse.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(118, Byte), Integer))
         Me.btn_browse.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_browse.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_browse.Location = New System.Drawing.Point(525, 437)
+        Me.btn_browse.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_browse.Location = New System.Drawing.Point(577, 445)
         Me.btn_browse.Name = "btn_browse"
-        Me.btn_browse.Size = New System.Drawing.Size(116, 43)
+        Me.btn_browse.Size = New System.Drawing.Size(94, 43)
         Me.btn_browse.TabIndex = 27
         Me.btn_browse.Text = "BROWSE"
         Me.btn_browse.UseVisualStyleBackColor = False
         '
         'Button3
         '
-        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(161, Byte), Integer), CType(CType(82, Byte), Integer))
+        Me.Button3.BackColor = System.Drawing.Color.SteelBlue
         Me.Button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(235, Byte), Integer), CType(CType(145, Byte), Integer))
         Me.Button3.FlatAppearance.BorderSize = 0
         Me.Button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(235, Byte), Integer), CType(CType(145, Byte), Integer))
         Me.Button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(118, Byte), Integer))
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(650, 437)
+        Me.Button3.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.Location = New System.Drawing.Point(677, 445)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(116, 43)
+        Me.Button3.Size = New System.Drawing.Size(94, 43)
         Me.Button3.TabIndex = 29
         Me.Button3.Text = "VIEW"
         Me.Button3.UseVisualStyleBackColor = False

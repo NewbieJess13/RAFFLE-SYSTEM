@@ -11,6 +11,7 @@ Public Class Form1
     Dim intervalCounter As Integer
     Dim DestinationCounter As Integer
     Dim sample As String
+    Dim con As New SqlConnection(My.Settings.ConnString)
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         If intervalCounter >= interval Then
             sample = ""
@@ -54,7 +55,19 @@ Public Class Form1
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        MsSql.connectionString = My.Settings.ConnString
+        Try
+            MsSql.connectionString = My.Settings.ConnString
+            con.Open()
+            Label4.Text = "CONNECTED"
+        Catch ex As Exception
+            Label4.Text = "DISCONNECTED"
+            If MessageBox.Show("NO CONNECTION ESTABLISHED. Want to change the settings?", "Raffle Connection", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) = DialogResult.Yes Then
+                frmConnection.ShowDialog()
+            End If
+        End Try
+
+
+
     End Sub
 
     Public Sub updateStatus(id As String)
@@ -128,6 +141,8 @@ Public Class Form1
 
         If (e.KeyCode = Keys.S AndAlso e.Modifiers = Keys.Control) Then
             stopTimer()
+            My.Computer.Audio.Stop()
+            My.Computer.Audio.Play(My.Settings.FilePath & "Victory.wav")
             btncountdown.Visible = True
             btn_Claimed.Visible = True
         End If
@@ -176,5 +191,9 @@ Public Class Form1
             gridview2.Rows.Add(dr(0), dr(1) & ", " & dr(2) & dr(3) & ".", dr(4), dr(5))
         Next
         lbl_count.Text = "Items: " & dtt.Rows.Count
+    End Sub
+
+    Private Sub SettingsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SettingsToolStripMenuItem.Click
+        frmConnection.ShowDialog()
     End Sub
 End Class

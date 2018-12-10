@@ -61,6 +61,15 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property _935271541986969() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("_935271541986969", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
         Friend ReadOnly Property add() As System.Drawing.Bitmap
@@ -77,6 +86,24 @@ Namespace My.Resources
             Get
                 Dim obj As Object = ResourceManager.GetObject("alarm-clock", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property beep() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("beep", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property Drum_Roll() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("Drum_Roll", resourceCulture)
             End Get
         End Property
         
@@ -173,10 +200,29 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property settings_1_() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("settings(1)", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property trophy_512() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("trophy-512", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property Victory() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("Victory", resourceCulture)
             End Get
         End Property
     End Module

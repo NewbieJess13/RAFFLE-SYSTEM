@@ -14,7 +14,8 @@
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>C:\Users\JESTONI\Desktop\Folder sample\</PublishUrl>
+    <TargetFrameworkProfile />
+    <PublishUrl>C:\Users\JESTONI\Desktop\Raffle System Installer\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -24,15 +25,14 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>1</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <ApplicationRevision>7</ApplicationRevision>
+    <ApplicationVersion>1.1.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <DefineDebug>true</DefineDebug>
@@ -159,6 +159,12 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmConnection.Designer.vb">
+      <DependentUpon>frmConnection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConnection.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frm_prizeList.Designer.vb">
       <DependentUpon>frm_prizeList.vb</DependentUpon>
     </Compile>
@@ -230,6 +236,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConnection.resx">
+      <DependentUpon>frmConnection.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_prizeList.resx">
       <DependentUpon>frm_prizeList.vb</DependentUpon>
@@ -333,6 +342,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="OneDrive.ico" />
+    <None Include="Resources\settings%281%29.png" />
+    <None Include="Resources\Victory.wav" />
+    <None Include="Resources\Drum Roll.wav" />
+    <None Include="Resources\beep.wav" />
+    <None Include="Resources\935271541986969.wav" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

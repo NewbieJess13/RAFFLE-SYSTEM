@@ -27,12 +27,6 @@ Partial Class Form1
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.MenuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AddNewParticipantsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.DeleteParticipantToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ListOfPrizesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AddPrizesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ResetWinnersToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Label2 = New System.Windows.Forms.Label()
         Me.cmdLoadPrize = New System.Windows.Forms.Button()
@@ -41,22 +35,30 @@ Partial Class Form1
         Me.Label1 = New System.Windows.Forms.Label()
         Me.L_Winner = New System.Windows.Forms.Label()
         Me.gridview2 = New System.Windows.Forms.DataGridView()
-        Me.lbl_count = New System.Windows.Forms.Label()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.labelID = New System.Windows.Forms.Label()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.btn_Claimed = New System.Windows.Forms.Button()
-        Me.btncountdown = New System.Windows.Forms.Button()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.Raffle_ID = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.cmbSite = New System.Windows.Forms.ComboBox()
-        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.lbl_count = New System.Windows.Forms.Label()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.labelID = New System.Windows.Forms.Label()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Raffle_ID = New System.Windows.Forms.Label()
+        Me.cmbSite = New System.Windows.Forms.ComboBox()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.btn_Claimed = New System.Windows.Forms.Button()
+        Me.btncountdown = New System.Windows.Forms.Button()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.MenuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AddNewParticipantsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DeleteParticipantToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ListOfPrizesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AddPrizesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ResetWinnersToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SettingsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.gridview2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -77,69 +79,6 @@ Partial Class Form1
         Me.MenuStrip1.Size = New System.Drawing.Size(1354, 48)
         Me.MenuStrip1.TabIndex = 8
         Me.MenuStrip1.Text = "MenuStrip1"
-        '
-        'MenuToolStripMenuItem
-        '
-        Me.MenuToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AddNewParticipantsToolStripMenuItem, Me.DeleteParticipantToolStripMenuItem, Me.ListOfPrizesToolStripMenuItem, Me.AddPrizesToolStripMenuItem, Me.ResetWinnersToolStripMenuItem})
-        Me.MenuToolStripMenuItem.Image = Global.RAFFLE_SYSTEM.My.Resources.Resources.list_512
-        Me.MenuToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.MenuToolStripMenuItem.Name = "MenuToolStripMenuItem"
-        Me.MenuToolStripMenuItem.ShortcutKeyDisplayString = "Ctrl + M"
-        Me.MenuToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.M), System.Windows.Forms.Keys)
-        Me.MenuToolStripMenuItem.Size = New System.Drawing.Size(81, 44)
-        Me.MenuToolStripMenuItem.Text = "Menu"
-        Me.MenuToolStripMenuItem.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal
-        Me.MenuToolStripMenuItem.ToolTipText = "Click to show the menu"
-        '
-        'AddNewParticipantsToolStripMenuItem
-        '
-        Me.AddNewParticipantsToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(161, Byte), Integer), CType(CType(82, Byte), Integer))
-        Me.AddNewParticipantsToolStripMenuItem.Image = Global.RAFFLE_SYSTEM.My.Resources.Resources.add
-        Me.AddNewParticipantsToolStripMenuItem.Name = "AddNewParticipantsToolStripMenuItem"
-        Me.AddNewParticipantsToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.A), System.Windows.Forms.Keys)
-        Me.AddNewParticipantsToolStripMenuItem.Size = New System.Drawing.Size(294, 24)
-        Me.AddNewParticipantsToolStripMenuItem.Text = "Add New Participant"
-        Me.AddNewParticipantsToolStripMenuItem.ToolTipText = "New Participant"
-        '
-        'DeleteParticipantToolStripMenuItem
-        '
-        Me.DeleteParticipantToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(161, Byte), Integer), CType(CType(82, Byte), Integer))
-        Me.DeleteParticipantToolStripMenuItem.Image = Global.RAFFLE_SYSTEM.My.Resources.Resources.participant
-        Me.DeleteParticipantToolStripMenuItem.Name = "DeleteParticipantToolStripMenuItem"
-        Me.DeleteParticipantToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.I), System.Windows.Forms.Keys)
-        Me.DeleteParticipantToolStripMenuItem.Size = New System.Drawing.Size(294, 24)
-        Me.DeleteParticipantToolStripMenuItem.Text = "List Of Participants"
-        Me.DeleteParticipantToolStripMenuItem.ToolTipText = "List of Participants"
-        '
-        'ListOfPrizesToolStripMenuItem
-        '
-        Me.ListOfPrizesToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(161, Byte), Integer), CType(CType(82, Byte), Integer))
-        Me.ListOfPrizesToolStripMenuItem.Image = Global.RAFFLE_SYSTEM.My.Resources.Resources.trophy_512
-        Me.ListOfPrizesToolStripMenuItem.Name = "ListOfPrizesToolStripMenuItem"
-        Me.ListOfPrizesToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.W), System.Windows.Forms.Keys)
-        Me.ListOfPrizesToolStripMenuItem.Size = New System.Drawing.Size(294, 24)
-        Me.ListOfPrizesToolStripMenuItem.Text = "List of Prizes"
-        Me.ListOfPrizesToolStripMenuItem.ToolTipText = "List of Prizes"
-        '
-        'AddPrizesToolStripMenuItem
-        '
-        Me.AddPrizesToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(161, Byte), Integer), CType(CType(82, Byte), Integer))
-        Me.AddPrizesToolStripMenuItem.Image = Global.RAFFLE_SYSTEM.My.Resources.Resources.plus
-        Me.AddPrizesToolStripMenuItem.Name = "AddPrizesToolStripMenuItem"
-        Me.AddPrizesToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.D), System.Windows.Forms.Keys)
-        Me.AddPrizesToolStripMenuItem.Size = New System.Drawing.Size(294, 24)
-        Me.AddPrizesToolStripMenuItem.Text = "Add Prizes"
-        Me.AddPrizesToolStripMenuItem.ToolTipText = "Add Prizes"
-        '
-        'ResetWinnersToolStripMenuItem
-        '
-        Me.ResetWinnersToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(161, Byte), Integer), CType(CType(82, Byte), Integer))
-        Me.ResetWinnersToolStripMenuItem.Image = Global.RAFFLE_SYSTEM.My.Resources.Resources.reset
-        Me.ResetWinnersToolStripMenuItem.Name = "ResetWinnersToolStripMenuItem"
-        Me.ResetWinnersToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.R), System.Windows.Forms.Keys)
-        Me.ResetWinnersToolStripMenuItem.Size = New System.Drawing.Size(294, 24)
-        Me.ResetWinnersToolStripMenuItem.Text = "Reset Winners"
-        Me.ResetWinnersToolStripMenuItem.ToolTipText = "Reset Winners"
         '
         'Timer1
         '
@@ -263,14 +202,44 @@ Partial Class Form1
         Me.gridview2.Size = New System.Drawing.Size(1335, 200)
         Me.gridview2.TabIndex = 10
         '
+        'Column2
+        '
+        Me.Column2.HeaderText = "ID"
+        Me.Column2.Name = "Column2"
+        Me.Column2.ReadOnly = True
+        Me.Column2.Visible = False
+        '
+        'Column1
+        '
+        Me.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column1.HeaderText = "Name"
+        Me.Column1.Name = "Column1"
+        Me.Column1.ReadOnly = True
+        '
+        'Column3
+        '
+        Me.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.Column3.HeaderText = "Project"
+        Me.Column3.Name = "Column3"
+        Me.Column3.ReadOnly = True
+        Me.Column3.Width = 86
+        '
+        'Column4
+        '
+        Me.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column4.HeaderText = "Items"
+        Me.Column4.Name = "Column4"
+        Me.Column4.ReadOnly = True
+        '
         'lbl_count
         '
+        Me.lbl_count.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lbl_count.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(161, Byte), Integer), CType(CType(82, Byte), Integer))
-        Me.lbl_count.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.lbl_count.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_count.Location = New System.Drawing.Point(0, 735)
         Me.lbl_count.Name = "lbl_count"
-        Me.lbl_count.Size = New System.Drawing.Size(1354, 25)
+        Me.lbl_count.Size = New System.Drawing.Size(1234, 25)
         Me.lbl_count.TabIndex = 13
         Me.lbl_count.Text = "Items:  0"
         '
@@ -322,6 +291,51 @@ Partial Class Form1
         Me.Panel1.Size = New System.Drawing.Size(1354, 443)
         Me.Panel1.TabIndex = 12
         '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(978, 271)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(86, 24)
+        Me.Label3.TabIndex = 21
+        Me.Label3.Text = "Quantity"
+        Me.Label3.Visible = False
+        '
+        'Raffle_ID
+        '
+        Me.Raffle_ID.AutoSize = True
+        Me.Raffle_ID.Location = New System.Drawing.Point(310, 14)
+        Me.Raffle_ID.Name = "Raffle_ID"
+        Me.Raffle_ID.Size = New System.Drawing.Size(72, 24)
+        Me.Raffle_ID.TabIndex = 17
+        Me.Raffle_ID.Text = "Label3"
+        Me.Raffle_ID.Visible = False
+        '
+        'cmbSite
+        '
+        Me.cmbSite.BackColor = System.Drawing.SystemColors.HotTrack
+        Me.cmbSite.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbSite.FormattingEnabled = True
+        Me.cmbSite.Items.AddRange(New Object() {"", "CERAMIC", "STAFF", "GAMOSA", "NCR", "SLOC"})
+        Me.cmbSite.Location = New System.Drawing.Point(591, 12)
+        Me.cmbSite.Name = "cmbSite"
+        Me.cmbSite.Size = New System.Drawing.Size(172, 30)
+        Me.cmbSite.TabIndex = 20
+        Me.cmbSite.Visible = False
+        '
+        'Label4
+        '
+        Me.Label4.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label4.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(161, Byte), Integer), CType(CType(82, Byte), Integer))
+        Me.Label4.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.Red
+        Me.Label4.Location = New System.Drawing.Point(1228, 735)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(126, 25)
+        Me.Label4.TabIndex = 21
+        Me.Label4.Text = "Label4"
+        '
         'btn_Claimed
         '
         Me.btn_Claimed.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(133, Byte), Integer))
@@ -359,16 +373,6 @@ Partial Class Form1
         Me.btncountdown.UseVisualStyleBackColor = False
         Me.btncountdown.Visible = False
         '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(978, 271)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(86, 24)
-        Me.Label3.TabIndex = 21
-        Me.Label3.Text = "Quantity"
-        Me.Label3.Visible = False
-        '
         'PictureBox2
         '
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
@@ -378,16 +382,6 @@ Partial Class Form1
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 18
         Me.PictureBox2.TabStop = False
-        '
-        'Raffle_ID
-        '
-        Me.Raffle_ID.AutoSize = True
-        Me.Raffle_ID.Location = New System.Drawing.Point(310, 14)
-        Me.Raffle_ID.Name = "Raffle_ID"
-        Me.Raffle_ID.Size = New System.Drawing.Size(72, 24)
-        Me.Raffle_ID.TabIndex = 17
-        Me.Raffle_ID.Text = "Label3"
-        Me.Raffle_ID.Visible = False
         '
         'PictureBox1
         '
@@ -399,46 +393,76 @@ Partial Class Form1
         Me.PictureBox1.TabIndex = 15
         Me.PictureBox1.TabStop = False
         '
-        'cmbSite
+        'MenuToolStripMenuItem
         '
-        Me.cmbSite.BackColor = System.Drawing.SystemColors.HotTrack
-        Me.cmbSite.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmbSite.FormattingEnabled = True
-        Me.cmbSite.Items.AddRange(New Object() {"", "CERAMIC", "STAFF", "GAMOSA", "NCR", "SLOC"})
-        Me.cmbSite.Location = New System.Drawing.Point(591, 12)
-        Me.cmbSite.Name = "cmbSite"
-        Me.cmbSite.Size = New System.Drawing.Size(172, 30)
-        Me.cmbSite.TabIndex = 20
-        Me.cmbSite.Visible = False
+        Me.MenuToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AddNewParticipantsToolStripMenuItem, Me.DeleteParticipantToolStripMenuItem, Me.ListOfPrizesToolStripMenuItem, Me.AddPrizesToolStripMenuItem, Me.ResetWinnersToolStripMenuItem, Me.SettingsToolStripMenuItem})
+        Me.MenuToolStripMenuItem.Image = Global.RAFFLE_SYSTEM.My.Resources.Resources.list_512
+        Me.MenuToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.MenuToolStripMenuItem.Name = "MenuToolStripMenuItem"
+        Me.MenuToolStripMenuItem.ShortcutKeyDisplayString = "Ctrl + M"
+        Me.MenuToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.M), System.Windows.Forms.Keys)
+        Me.MenuToolStripMenuItem.Size = New System.Drawing.Size(81, 44)
+        Me.MenuToolStripMenuItem.Text = "Menu"
+        Me.MenuToolStripMenuItem.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal
+        Me.MenuToolStripMenuItem.ToolTipText = "Click to show the menu"
         '
-        'Column2
+        'AddNewParticipantsToolStripMenuItem
         '
-        Me.Column2.HeaderText = "ID"
-        Me.Column2.Name = "Column2"
-        Me.Column2.ReadOnly = True
-        Me.Column2.Visible = False
+        Me.AddNewParticipantsToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(161, Byte), Integer), CType(CType(82, Byte), Integer))
+        Me.AddNewParticipantsToolStripMenuItem.Image = Global.RAFFLE_SYSTEM.My.Resources.Resources.add
+        Me.AddNewParticipantsToolStripMenuItem.Name = "AddNewParticipantsToolStripMenuItem"
+        Me.AddNewParticipantsToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.A), System.Windows.Forms.Keys)
+        Me.AddNewParticipantsToolStripMenuItem.Size = New System.Drawing.Size(294, 24)
+        Me.AddNewParticipantsToolStripMenuItem.Text = "Add New Participant"
+        Me.AddNewParticipantsToolStripMenuItem.ToolTipText = "New Participant"
         '
-        'Column1
+        'DeleteParticipantToolStripMenuItem
         '
-        Me.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.Column1.HeaderText = "Name"
-        Me.Column1.Name = "Column1"
-        Me.Column1.ReadOnly = True
+        Me.DeleteParticipantToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(161, Byte), Integer), CType(CType(82, Byte), Integer))
+        Me.DeleteParticipantToolStripMenuItem.Image = Global.RAFFLE_SYSTEM.My.Resources.Resources.participant
+        Me.DeleteParticipantToolStripMenuItem.Name = "DeleteParticipantToolStripMenuItem"
+        Me.DeleteParticipantToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.I), System.Windows.Forms.Keys)
+        Me.DeleteParticipantToolStripMenuItem.Size = New System.Drawing.Size(294, 24)
+        Me.DeleteParticipantToolStripMenuItem.Text = "List Of Participants"
+        Me.DeleteParticipantToolStripMenuItem.ToolTipText = "List of Participants"
         '
-        'Column3
+        'ListOfPrizesToolStripMenuItem
         '
-        Me.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
-        Me.Column3.HeaderText = "Project"
-        Me.Column3.Name = "Column3"
-        Me.Column3.ReadOnly = True
-        Me.Column3.Width = 86
+        Me.ListOfPrizesToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(161, Byte), Integer), CType(CType(82, Byte), Integer))
+        Me.ListOfPrizesToolStripMenuItem.Image = Global.RAFFLE_SYSTEM.My.Resources.Resources.trophy_512
+        Me.ListOfPrizesToolStripMenuItem.Name = "ListOfPrizesToolStripMenuItem"
+        Me.ListOfPrizesToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.W), System.Windows.Forms.Keys)
+        Me.ListOfPrizesToolStripMenuItem.Size = New System.Drawing.Size(294, 24)
+        Me.ListOfPrizesToolStripMenuItem.Text = "List of Prizes"
+        Me.ListOfPrizesToolStripMenuItem.ToolTipText = "List of Prizes"
         '
-        'Column4
+        'AddPrizesToolStripMenuItem
         '
-        Me.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.Column4.HeaderText = "Items"
-        Me.Column4.Name = "Column4"
-        Me.Column4.ReadOnly = True
+        Me.AddPrizesToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(161, Byte), Integer), CType(CType(82, Byte), Integer))
+        Me.AddPrizesToolStripMenuItem.Image = Global.RAFFLE_SYSTEM.My.Resources.Resources.plus
+        Me.AddPrizesToolStripMenuItem.Name = "AddPrizesToolStripMenuItem"
+        Me.AddPrizesToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.D), System.Windows.Forms.Keys)
+        Me.AddPrizesToolStripMenuItem.Size = New System.Drawing.Size(294, 24)
+        Me.AddPrizesToolStripMenuItem.Text = "Add Prizes"
+        Me.AddPrizesToolStripMenuItem.ToolTipText = "Add Prizes"
+        '
+        'ResetWinnersToolStripMenuItem
+        '
+        Me.ResetWinnersToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(161, Byte), Integer), CType(CType(82, Byte), Integer))
+        Me.ResetWinnersToolStripMenuItem.Image = Global.RAFFLE_SYSTEM.My.Resources.Resources.reset
+        Me.ResetWinnersToolStripMenuItem.Name = "ResetWinnersToolStripMenuItem"
+        Me.ResetWinnersToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.R), System.Windows.Forms.Keys)
+        Me.ResetWinnersToolStripMenuItem.Size = New System.Drawing.Size(294, 24)
+        Me.ResetWinnersToolStripMenuItem.Text = "Reset Winners"
+        Me.ResetWinnersToolStripMenuItem.ToolTipText = "Reset Winners"
+        '
+        'SettingsToolStripMenuItem
+        '
+        Me.SettingsToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(161, Byte), Integer), CType(CType(82, Byte), Integer))
+        Me.SettingsToolStripMenuItem.Image = Global.RAFFLE_SYSTEM.My.Resources.Resources.settings_1_
+        Me.SettingsToolStripMenuItem.Name = "SettingsToolStripMenuItem"
+        Me.SettingsToolStripMenuItem.Size = New System.Drawing.Size(294, 24)
+        Me.SettingsToolStripMenuItem.Text = "Settings"
         '
         'Form1
         '
@@ -446,6 +470,7 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1354, 760)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.cmbSite)
         Me.Controls.Add(Me.lbl_count)
         Me.Controls.Add(Me.Panel1)
@@ -503,4 +528,6 @@ Partial Class Form1
     Friend WithEvents Column1 As DataGridViewTextBoxColumn
     Friend WithEvents Column3 As DataGridViewTextBoxColumn
     Friend WithEvents Column4 As DataGridViewTextBoxColumn
+    Friend WithEvents Label4 As Label
+    Friend WithEvents SettingsToolStripMenuItem As ToolStripMenuItem
 End Class
